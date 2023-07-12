@@ -2,7 +2,6 @@ import React from 'react';
 import CustomNavbar from './Navbar';
 import Footer from './Footer';
 import CarouselSlider from "./CarouselSlider";
-import CatdogSubNav from './CatdogSubNav';
 
 function Cats() {
     const images = [
@@ -35,7 +34,6 @@ function Cats() {
     return (
         <div>
             <CustomNavbar />
-            <CatdogSubNav />
             <div style={{ padding: "5%" }} className="container">
                 <CarouselSlider images={images} />
             </div>

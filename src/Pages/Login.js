@@ -12,7 +12,7 @@ function Login(props) {
             <CustomNavbar />
             <div style={{ backgroundColor: "#fffbf4" }}>
                 <div className="container" style={{ padding: "5%" }}>
-                    <h1 className="text-center">
+                    <h1 className="text-center" style={{ color: "#525252" }}>
                         Login
                     </h1>
                     <div>
@@ -45,13 +45,15 @@ function Login(props) {
                                 />
                             </Col>
                         </Row>
-                        <p className='text-center p-2'><Link as={Link} to="/forgotpassword" className="text-center">Forgot Password?</Link></p>
+                        <p className='text-center p-2'><Link as={Link} to="/forgotpassword" className="text-center fw-bold" style={{ color: "#91908d" }}>Forgot Password?</Link></p>
 
                         <div className="text-center">
                             <Button variant="outlined" color="success">
                                 Sign in
                             </Button>
-                            <p className="text-center p-2"><Link as={Link} to="/signup" className="text-center">Create Account</Link></p>
+                            <p className="text-center p-2">
+                                <Link as={Link} to="/signup" className="text-center" style={{ color: "#91908d" }}><b>Create Account</b></Link>
+                            </p>
                         </div>
                     </div>
                 </div>
